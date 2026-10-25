@@ -1,0 +1,17 @@
+Captured UTC: 2026-10-25T09:46:33.643995+00:00
+Command: D:\i230815_A_A2\.venv\Scripts\python.exe agent.py --help
+Exit code: 0
+
+usage: agent.py [-h] --repo REPO --output OUTPUT [--trace TRACE]
+                [--max-steps MAX_STEPS] [--timeout TIMEOUT]
+
+Evidence-based, read-only DevOps GitHub auditing agent
+
+options:
+  -h, --help            show this help message and exit
+  --repo REPO           Public HTTPS GitHub repository URL
+  --output OUTPUT       Destination JSON report
+  --trace TRACE         Optional sanitized JSONL tool-call evidence
+  --max-steps MAX_STEPS
+                        Model/tool turns (default 32; maximum 100)
+  --timeout TIMEOUT     Investigation seconds, excluding clone (default 1200)

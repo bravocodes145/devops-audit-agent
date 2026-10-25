@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<title>Recorded execution evidence</title><style>
+body {margin:32px;background:white;color:#151515;font:16px Arial,sans-serif}
+h1 {font-size:24px;margin-bottom:8px} p {color:#555;font-size:14px}
+pre {padding:20px;border:1px solid #bbb;white-space:pre-wrap;overflow-wrap:anywhere;
+font:14px/1.5 Consolas,monospace;background:#fafafa}
+</style><h1>Public repository audit and dynamic tool trace</h1><p>Rayyan Qamar | 23i-0815 | Section A. Saved machine output displayed in Edge.</p><pre>PUBLIC GITHUB AUDIT — recorded live model/tool interaction
+{
+  &quot;event&quot;: &quot;start&quot;,
+  &quot;repository&quot;: &quot;https://github.com/psf/requests&quot;,
+  &quot;commit&quot;: &quot;611c6162cbc4ac2020a2f91c7cfa4f3abf9bbb60&quot;,
+  &quot;model&quot;: &quot;gemini-3.1-flash-lite&quot;,
+  &quot;timestamp&quot;: &quot;2026-10-25T06:29:48.077291+00:00&quot;
+}
+
+Turn 1: list_files({&quot;limit&quot;: 100})
+Turn 2: read_file({&quot;path&quot;: &quot;.github/workflows/publish.yml&quot;})
+Turn 3: read_file({&quot;path&quot;: &quot;.github/workflows/run-tests.yml&quot;})
+Turn 4: read_file({&quot;path&quot;: &quot;Makefile&quot;})
+Turn 5: read_file({&quot;path&quot;: &quot;requirements-dev.txt&quot;})
+Turn 6: read_file({&quot;path&quot;: &quot;pyproject.toml&quot;})
+Turn 7: read_file({&quot;path&quot;: &quot;.github/workflows/lint.yml&quot;})
+Turn 8: read_file({&quot;path&quot;: &quot;.pre-commit-config.yaml&quot;})
+Turn 9: read_file({&quot;path&quot;: &quot;.github/workflows/codeql-analysis.yml&quot;})
+Turn 10: submit_report(final JSON report)
+
+{
+  &quot;event&quot;: &quot;complete&quot;,
+  &quot;steps&quot;: 10,
+  &quot;violations&quot;: 0,
+  &quot;elapsed_seconds&quot;: 61.28,
+  &quot;timestamp&quot;: &quot;2026-10-25T06:30:49.353244+00:00&quot;
+}
+
+Actual CLI output artifact:
+{
+  &quot;repository&quot;: &quot;https://github.com/psf/requests&quot;,
+  &quot;violations&quot;: []
+}</pre></html>

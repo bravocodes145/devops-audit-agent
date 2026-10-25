@@ -1,0 +1,40 @@
+{
+  "captures": [
+    {
+      "file": "01-cli.png",
+      "source": "01-cli.html",
+      "captured_at": "2026-10-25T09:46:44.781067+00:00",
+      "type": "real Edge browser capture of saved execution data"
+    },
+    {
+      "file": "02-tests.png",
+      "source": "02-tests.html",
+      "captured_at": "2026-10-25T09:46:44.956117+00:00",
+      "type": "real Edge browser capture of saved execution data"
+    },
+    {
+      "file": "03-lint.png",
+      "source": "03-lint.html",
+      "captured_at": "2026-10-25T09:46:45.072601+00:00",
+      "type": "real Edge browser capture of saved execution data"
+    },
+    {
+      "file": "04-evaluation.png",
+      "source": "04-evaluation.html",
+      "captured_at": "2026-10-25T09:46:45.174137+00:00",
+      "type": "real Edge browser capture of saved execution data"
+    },
+    {
+      "file": "05-live-audit.png",
+      "source": "05-live-audit.html",
+      "captured_at": "2026-10-25T09:46:45.278544+00:00",
+      "type": "real Edge browser capture of saved execution data"
+    },
+    {
+      "file": "06-github.png",
+      "source": "https://github.com/bravocodes145/devops-audit-agent",
+      "captured_at": "2026-10-25T09:46:47.696688+00:00",
+      "type": "real screenshot of the public GitHub repository"
+    }
+  ]
+}
