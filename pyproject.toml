@@ -1,0 +1,19 @@
+[project]
+name = "devops-audit-agent"
+version = "1.0.0"
+description = "DevOps repository auditing with Gemini"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "S"]
+ignore = ["E501", "S603", "S607"]
+
+[tool.ruff.lint.per-file-ignores]
+"auditor/provider.py" = ["S310"]
+"tests/*" = ["S101", "S105", "S106"]
+"scripts/*" = ["S101"]
