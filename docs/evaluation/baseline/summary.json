@@ -1,0 +1,48 @@
+{
+  "runs": [
+    {
+      "fixture": "obvious",
+      "model": "gemini-3.1-flash-lite",
+      "target_unchanged": true,
+      "elapsed_seconds": 9.72,
+      "timestamp": "2026-10-25T06:26:32.340751+00:00",
+      "reference_matches": 2,
+      "reported": 2,
+      "expected": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "missed": [],
+      "method": "Provisional exact-file/accepted-line matching; extra findings need human review. Not hidden-test performance."
+    },
+    {
+      "fixture": "subtle",
+      "model": "gemini-3.1-flash-lite",
+      "target_unchanged": true,
+      "elapsed_seconds": 16.33,
+      "timestamp": "2026-10-25T06:26:49.017482+00:00",
+      "reference_matches": 1,
+      "reported": 1,
+      "expected": 2,
+      "precision": 1.0,
+      "recall": 0.5,
+      "missed": [
+        "PR title is interpolated directly into shell code"
+      ],
+      "method": "Provisional exact-file/accepted-line matching; extra findings need human review. Not hidden-test performance."
+    },
+    {
+      "fixture": "healthy",
+      "model": "gemini-3.1-flash-lite",
+      "target_unchanged": true,
+      "elapsed_seconds": 21.47,
+      "timestamp": "2026-10-25T06:27:10.872268+00:00",
+      "reference_matches": 0,
+      "reported": 0,
+      "expected": 0,
+      "precision": 1.0,
+      "recall": null,
+      "missed": [],
+      "method": "Provisional exact-file/accepted-line matching; extra findings need human review. Not hidden-test performance."
+    }
+  ]
+}

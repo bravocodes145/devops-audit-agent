@@ -1,0 +1,25 @@
+{
+  "repository": "fixture://obvious",
+  "violations": [
+    {
+      "file": ".github/workflows/ci.yml",
+      "severity": "high",
+      "evidence": "- run: python -m unittest discover -s tests || true",
+      "description": "The CI workflow uses '|| true' in the test step, which masks test failures and allows the pipeline to pass even if tests fail.",
+      "category": "ci",
+      "line": 13,
+      "recommendation": "Remove '|| true' to ensure the CI pipeline correctly reports test failures.",
+      "rule_id": "CI-001"
+    },
+    {
+      "evidence": "INVOICE_DIRECTORY = Path(\"C:/Users/developer/Desktop/invoices\")",
+      "description": "The application uses a hardcoded absolute path for a local machine, which will fail in any other environment.",
+      "severity": "medium",
+      "rule_id": "HYG-001",
+      "line": 3,
+      "recommendation": "Use environment variables or relative paths to configure the invoice directory.",
+      "file": "main.py",
+      "category": "hygiene"
+    }
+  ]
+}

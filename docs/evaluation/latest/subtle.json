@@ -1,0 +1,15 @@
+{
+  "repository": "fixture://subtle",
+  "violations": [
+    {
+      "category": "security",
+      "description": "The workflow uses pull_request_target with contents: write permissions and checks out the untrusted PR head commit. This allows an attacker to execute arbitrary code from the PR in the context of the repository's secrets (DEPLOY_TOKEN is exposed to the script).",
+      "file": ".github/workflows/review.yml",
+      "evidence": "ref: ${{ github.event.pull_request.head.sha }}",
+      "recommendation": "Use pull_request instead of pull_request_target, or avoid checking out untrusted code when using pull_request_target. Remove write permissions if not strictly necessary.",
+      "rule_id": "SEC-001",
+      "severity": "critical",
+      "line": 13
+    }
+  ]
+}

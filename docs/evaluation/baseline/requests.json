@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/psf/requests",
+  "violations": [
+    {
+      "recommendation": "Use the built-in checkout capabilities of the CodeQL action or ensure the environment is sufficiently isolated.",
+      "severity": "medium",
+      "rule_id": "CI-001",
+      "evidence": "git checkout HEAD^2",
+      "file": ".github/workflows/codeql-analysis.yml",
+      "description": "The CodeQL workflow uses a manual git checkout of the pull request head, which is a potential security risk if not handled carefully, although it is a common pattern for CodeQL. However, the use of `git checkout HEAD^2` without verifying the commit or using a more secure action is generally discouraged in modern CI practices.",
+      "category": "ci",
+      "line": 44
+    }
+  ]
+}

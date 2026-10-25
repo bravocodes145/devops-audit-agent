@@ -1,0 +1,15 @@
+{
+  "repository": "fixture://subtle",
+  "violations": [
+    {
+      "description": "The workflow uses pull_request_target with checkout of the PR head commit, which is a security risk as it executes untrusted code from the PR with elevated permissions. Additionally, it grants write permissions to the repository.",
+      "evidence": "pull_request_target:",
+      "severity": "critical",
+      "recommendation": "Use pull_request instead of pull_request_target, or avoid checking out the PR head commit if pull_request_target is necessary. Remove unnecessary write permissions.",
+      "category": "security",
+      "line": 3,
+      "rule_id": "SEC-001",
+      "file": ".github/workflows/review.yml"
+    }
+  ]
+}
